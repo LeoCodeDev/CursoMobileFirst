@@ -119,7 +119,7 @@ main {
 
 .main-exchange-container {
     width: 100%;
-    height: 100vh;
+    height: auto;
     padding-top: 60px;
     text-align: center;
 }
@@ -159,11 +159,16 @@ main {
     color: var(--normal-gray);
 }
 
+.main-tables-container{
+    width: 100%;
+    height: auto;
+}
+
 .main-currency-table {
     width: 61.5%;
     min-width: 197px;
     max-width: 500px;
-    height: 160px;
+    min-height: 160px;
     margin: 0 auto;
     font-family: "Inter", sans-serif;
     
@@ -195,6 +200,7 @@ main {
 .currency-table--container td {
     background-color: var(--just-white);
     width: 50%;
+    height: 4rem;
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 1.9rem;
@@ -226,9 +232,9 @@ main {
 
 .currency-table--container .down {
     display: inline-block;
-    width: 15px;
-    height: 15px;
-    margin-left: 10px;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 1rem;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -237,11 +243,125 @@ main {
 
 .currency-table--container .up {
     display: inline-block;
-    width: 15px;
-    height: 15px;
-    margin-left: 10px;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 1rem;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-image: url(../assets/icons/trending-up1.png);
+}
+
+.currency-table--date {
+    background-color: var(--soft-orange);
+    height: 3rem;
+    width: 20rem;
+    padding: 0.8rem;
+    border-radius: 0.8rem;
+    margin: 1.5rem 0 6.5rem 0;
+}
+
+.currency-table--date p, b {
+    color: var(--light-warm-black);
+}
+
+.main-product-detail {
+    background-color: var(--warm-black);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+
+.main-product-detail img {
+    position: absolute;
+    margin-top: -1.3rem;
+    width: 4.5rem;
+    height: auto;
+}
+
+.main-product-detail div {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-top: 6.4rem;
+    gap: 2.4rem;
+}
+
+.main-product-detail div > h2 {
+    color: var(--just-white);
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 2.4rem;
+}
+
+.main-product-detail div > p {
+    color: var(--medium-gray);
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.4rem;
+}
+
+.product-card--container {
+    width: 90%;
+    margin: 3.2rem auto;
+}
+
+.product-detail--card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    text-align: left;
+    width: 100%;
+    height: 15rem;
+    background-color: var(--light-warm-black);
+    margin-bottom: 1.6rem;
+    padding: 1.6rem 1.6rem 2.2rem;
+    border-radius: 0.5rem;
+}
+
+.clock,
+.eye,
+.dollar,
+.check {
+    width: 2.4rem;
+    height: 2.4rem;
+    display: inline-block;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.clock{
+    background-image: url(../assets/icons/clock1.png);
+}
+
+.eye {
+    background-image: url(../assets/icons/eye1.png);
+}
+
+.dollar {
+    background-image: url(../assets/icons/dollar-sign1.png)
+}
+
+.check {
+    background-image: url(../assets/icons/check-circle1.png);
+}
+
+.product-detail--card .product-card-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.8rem;
+    color: var(--just-white);
+}
+
+.product-detail--card .product--card-body {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--medium-gray);
 }
